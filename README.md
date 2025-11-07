@@ -1,16 +1,41 @@
-# React + Vite
+Features:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1 Intuitive Calendar Interface
 
-Currently, two official plugins are available:
+Users can view all available slots in a clear, interactive calendar layout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Easy navigation by day, week, or month for quick access to slots.
 
-## React Compiler
+2 Add, Update, and Delete Slots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users can click on any date to add a new slot.
 
-## Expanding the ESLint configuration
+Slots can be updated or deleted directly from the calendar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Real-time updates ensure the calendar always shows the latest information.
+
+3 User Authentication
+
+Secure login and registration system for managing personal or team schedules.
+
+Protects user data and ensures only authorized users can modify slots.
+
+4 Responsive Design
+
+Works seamlessly on desktop, tablet, and mobile devices.
+
+Fully responsive UI ensures a consistent experience across all screen sizes.
+
+5 Cloud Database Integration
+
+Stores slot and user data in a cloud-hosted database (e.g., MongoDB Atlas).
+
+Allows users to access their schedules from any device, anywhere.
+
+6 Modern Web Technologies
+
+Built with React.js for a dynamic and responsive frontend.
+
+Backend powered by Node.js and Express.js with RESTful APIs.
+
+Uses Axios for efficient API calls and data handling.
