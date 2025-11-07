@@ -22,7 +22,7 @@ export default function Dashboard() {
       const token = localStorage.getItem("token");
       console.log("🟢 Saving booking:", eventData);
 
-      await axios.post("http://localhost:5000/api/bookings", eventData, {
+      await axios.post("https://slot-sweepere.vercel.app/api/bookings", eventData, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

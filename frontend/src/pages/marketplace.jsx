@@ -14,7 +14,7 @@ export default function Marketplace() {
   const fetchSwappableSlots = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/swappable-slots", {
+      const res = await axios.get("https://slot-sweepere.vercel.app/api/swappable-slots", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setSwappableSlots(res.data);
@@ -27,7 +27,7 @@ export default function Marketplace() {
   const fetchMySlots = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/bookings", {
+      const res = await axios.get("https://slot-sweepere.vercel.app/api/bookings", {
         headers: { Authorization: `Bearer ${token}` },
       });
       // Only swappable slots
@@ -56,7 +56,7 @@ export default function Marketplace() {
       setLoading(true);
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:5000/api/swap-request",
+        "https://slot-sweepere.vercel.app/api/swap-request",
         {
           mySlotId: selectedMySlot,
           theirSlotId: selectedTheirSlot._id,

@@ -9,7 +9,7 @@ export default function IncomingRequests() {
   const fetchIncomingRequests = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/incoming", {
+      const res = await axios.get("https://slot-sweepere.vercel.app/api/incoming", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setRequests(res.data);
@@ -25,7 +25,7 @@ export default function IncomingRequests() {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        `http://localhost:5000/api/swap-response/${requestId}`,
+        `https://slot-sweepere.vercel.app/api/swap-response/${requestId}`,
         { accepted },
         { headers: { Authorization: `Bearer ${token}` } }
       );

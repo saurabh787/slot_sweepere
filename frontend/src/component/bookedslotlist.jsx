@@ -13,7 +13,7 @@ export default function BookedSlotsList({ refreshTrigger }) {
     try {
       console.log("📡 Fetching bookings from backend...");
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/bookings", {
+      const res = await axios.get("https://slot-sweepere.vercel.app/api/bookings", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -37,7 +37,7 @@ export default function BookedSlotsList({ refreshTrigger }) {
     if (!window.confirm("Are you sure you want to delete this slot?")) return;
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:5000/api/bookings/${id}`, {
+      await axios.delete(`https://slot-sweepere.vercel.app/api/bookings/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -54,7 +54,7 @@ export default function BookedSlotsList({ refreshTrigger }) {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.put(
-        `http://localhost:5000/api/bookings/${editSlot._id}`,
+        `https://slot-sweepere.vercel.app/api/bookings/${editSlot._id}`,
         editSlot,
         { headers: { Authorization: `Bearer ${token}` } }
       );
